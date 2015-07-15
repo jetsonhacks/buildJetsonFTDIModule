@@ -5,12 +5,6 @@ if [ $(id -u) != 0 ]; then
    echo "$ sudo "$0""
    exit
 fi
-
-
-# Load prerequisites
-apt-add-repository universe
-apt-get update
-apt-get install libncurses5-dev -y
 # Get the kernel source for LT4 21.4
 cd /usr/src/
 wget http://developer.download.nvidia.com/embedded/L4T/r21_Release_v4.0/source/kernel_src.tbz2
