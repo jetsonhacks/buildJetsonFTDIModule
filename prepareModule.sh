@@ -23,6 +23,7 @@ zcat /proc/config.gz > .config
 make menuconfig
 make prepare
 make modules_prepare
+make M=drivers/usb/serial/
 cp drivers/usb/serial/ftdi_sio.ko /lib/modules/$(uname -r)/kernel
 depmod -a
 
