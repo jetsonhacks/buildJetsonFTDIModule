@@ -1,5 +1,5 @@
 #!/bin/sh
-# Prepare to build some drivers for LT4 21.4 on the NVIDIA Jetson TK1
+# Prepare to build the FTDI module for LT4 21.4 on the NVIDIA Jetson TK1
 if [ $(id -u) != 0 ]; then
    echo "This script requires root permissions"
    echo "$ sudo "$0""
