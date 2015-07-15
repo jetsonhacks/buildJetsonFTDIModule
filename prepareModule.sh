@@ -37,4 +37,5 @@ make M=drivers/usb/serial/
 # After compilation, copy the compiled module to the system area
 cp drivers/usb/serial/ftdi_sio.ko /lib/modules/$(uname -r)/kernel
 depmod -a
+/bin/echo -e "\e[1;32mFTDI Driver Module Installed.\e[0m"
 
